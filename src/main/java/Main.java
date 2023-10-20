@@ -13,5 +13,9 @@ public class Main {
         factory = new CafeSimpleFactory();
         cafe = factory.crearCafe();
         System.out.println(cafe.getDescripcion() + " - Precio: $" + cafe.getCosto());
+
+        factory = new CafeConCarameloFactory();
+        cafe = factory.crearCafe();
+        System.out.println(cafe.getDescripcion() + " - Precio: $" + cafe.getCosto());
     }
 }
